@@ -58,6 +58,10 @@
     for (var t = 0; t < titles.length; t++) {
       titles[t].setAttribute('title', titles[t].getAttribute('data-title-' + lang));
     }
+    var langs = document.querySelectorAll('[data-lang-pt]');
+    for (var l = 0; l < langs.length; l++) {
+      langs[l].setAttribute('lang', langs[l].getAttribute('data-lang-' + lang));
+    }
     var btns = document.querySelectorAll('.lang__btn');
     for (var b = 0; b < btns.length; b++) {
       btns[b].setAttribute('aria-pressed', btns[b].getAttribute('data-lang') === lang ? 'true' : 'false');
