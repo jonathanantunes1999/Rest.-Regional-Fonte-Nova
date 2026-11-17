@@ -102,7 +102,8 @@ p{margin:0 0 1rem}
 .ph__label{font:600 .78rem var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--vinho);background:var(--papel);padding:.4rem .7rem;border:1px solid var(--vinho);text-align:center;max-width:90%}
 .photo{position:relative;margin:0 auto;max-width:440px;width:100%;padding:.7rem;background:#FBF6EA;transform:rotate(1.6deg);box-shadow:0 18px 30px -14px rgba(42,31,26,.5),0 2px 6px rgba(42,31,26,.2)}
 .photo img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
-.ph--dish{aspect-ratio:4/3}
+.photo--dish{max-width:none;transform:rotate(-1deg)}
+.photo--dish img{aspect-ratio:4/3;object-position:50% 40%}
 .taped::before,.taped::after{content:"";position:absolute;width:84px;height:26px;background:rgba(176,122,42,.55);top:-12px;transform:rotate(-5deg);left:12%;mix-blend-mode:multiply}
 .taped::after{left:auto;right:12%;transform:rotate(4deg)}
 
@@ -117,7 +118,7 @@ p{margin:0 0 1rem}
 .ementa__head h2{max-width:none;margin-bottom:.75rem;font-size:clamp(2.4rem,9vw,4rem)}
 .ementa__note{font:italic 400 1.1rem var(--print);color:var(--muted);margin:0}
 .ementa__cols{display:grid;gap:2.5rem}
-.ementa__right{display:grid;gap:2.5rem;align-content:start}
+.ementa__left,.ementa__right{display:grid;gap:2.5rem;align-content:start}
 .cat__title{display:flex;align-items:center;gap:.9rem;font-size:1.6rem;color:var(--vinho);justify-content:center}
 .cat__title::before,.cat__title::after{content:"";flex:1;height:5px;border-block:1px solid var(--vinho);opacity:.55}
 .cat__sub{font:italic 400 1.05rem var(--print);color:var(--muted);text-align:center;margin:.35rem 0 .5rem}
@@ -133,9 +134,10 @@ p{margin:0 0 1rem}
 .sides li{padding:.35rem 0;font-family:var(--print);font-size:1.12rem}
 .sides li+li::before{content:"✦";display:block;font-size:.6rem;color:var(--ouro);line-height:1;margin-bottom:.35rem}
 @media (min-width:860px){
+  .photo--dish img{aspect-ratio:1/1}
   .ementa{padding:3.5rem 3.5rem 3.75rem}
   .ementa__cols{grid-template-columns:1.1fr .9fr;gap:0}
-  .ementa__cols>.cat{padding-right:3rem;border-right:1px solid var(--linha)}
+  .ementa__left{padding-right:3rem;border-right:1px solid var(--linha)}
   .ementa__right{padding-left:3rem}
 }
 
