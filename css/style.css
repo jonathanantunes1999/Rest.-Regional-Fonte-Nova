@@ -58,27 +58,30 @@ p{margin:0 0 1rem}
 .btn--papel:hover{background:#fff}
 @media (max-width:420px){.btns .btn{width:100%}}
 
-/* hero: a pintura dissolve-se em papel, o título assenta direto no papel */
+/* hero: pintura inteira, nome numa legenda de museu */
 .hero{position:relative}
 .hero__pic{display:block;position:relative}
 .hero__pic::after{content:"";position:absolute;inset:.6rem;border:1px solid rgba(251,246,234,.8);pointer-events:none;z-index:2}
-.hero__pic::before{content:"";position:absolute;inset:auto 0 0 0;height:55%;z-index:1;pointer-events:none;background:linear-gradient(to top,var(--papel) 8%,rgba(242,232,213,.85) 40%,rgba(242,232,213,0) 100%)}
 .hero__img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;object-position:46% 38%}
-.hero__wrap{position:relative;margin-top:-6rem;padding-bottom:3rem;z-index:3}
+.hero__wrap{position:relative;padding-block:2rem 3rem}
 .hero h1{font-size:clamp(2.7rem,12vw,5.4rem);color:var(--tinta);margin-bottom:1.1rem}
 .h1__pre{display:block;font:italic 400 clamp(1.25rem,4.6vw,1.8rem)/1.2 var(--print);color:var(--vinho);margin-bottom:.4rem}
 .hero__tagline{font:italic 400 clamp(1.2rem,4.2vw,1.45rem)/1.4 var(--print);color:var(--muted);max-width:30ch;margin-bottom:1.5rem}
-@media (min-width:860px){.hero__tagline{max-width:none}}
-.stamp{position:absolute;width:92px;height:92px;right:1.25rem;top:-1rem;filter:drop-shadow(0 3px 5px rgba(42,31,26,.3));animation:giro 60s linear infinite}
+.stamp{position:absolute;width:92px;height:92px;right:1.25rem;top:-46px;filter:drop-shadow(0 3px 5px rgba(42,31,26,.3));animation:giro 60s linear infinite;z-index:3}
 @keyframes giro{to{transform:rotate(360deg)}}
 @media (min-width:860px){
   .hero{min-height:calc(100vh - var(--hdr));min-height:calc(100svh - var(--hdr));display:flex;align-items:flex-end}
   .hero__pic{position:absolute;inset:0}
   .hero__pic::after{inset:1.1rem}
-  .hero__pic::before{height:62%;background:linear-gradient(to top,var(--papel) 8%,rgba(242,232,213,.95) 30%,rgba(242,232,213,.6) 52%,rgba(242,232,213,0) 100%)}
-  .hero__img{height:100%;aspect-ratio:auto;object-position:50% 0%}
-  .hero__wrap{margin-top:0;padding-bottom:3.5rem}
-  .stamp{width:140px;height:140px;right:1.25rem;top:auto;bottom:3.5rem}
+  .hero__img{height:100%;aspect-ratio:auto;object-position:50% 10%}
+  .hero__wrap{padding-block:0 3.6rem;display:flex;justify-content:flex-end;z-index:3}
+  .label{position:relative;width:100%;max-width:410px;background:#FBF6EA var(--grao);padding:1.7rem 1.8rem 1.6rem;box-shadow:0 20px 34px -16px rgba(42,31,26,.55),0 2px 6px rgba(42,31,26,.2);outline:1.5px solid var(--vinho);outline-offset:-.45rem}
+  .hero h1{font-size:3.5rem;margin-bottom:.9rem}
+  .h1__pre{font-size:1.25rem;margin-bottom:.25rem}
+  .hero__tagline{max-width:none;font-size:1.12rem;margin-bottom:1.2rem}
+  .label .btn{min-height:46px;padding:.55rem 1.15rem}
+  .label .btns{gap:.6rem}
+  .stamp{width:112px;height:112px;left:auto;right:-1.6rem;top:-3.6rem}
 }
 .contour{height:56px;background:var(--curvas) repeat-x center;opacity:.7}
 
