@@ -68,8 +68,22 @@
     }
   }
 
+  function markToday() {
+    var map = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+    var day;
+    try {
+      day = map[new Intl.DateTimeFormat('en-US', { weekday: 'short', timeZone: 'Europe/Lisbon' }).format(new Date())];
+    } catch (e) { day = new Date().getDay(); }
+    var row = document.querySelector('.hours__table tr[data-day="' + day + '"]');
+    if (!row) return;
+    row.classList.add('is-today');
+    var badge = row.querySelector('.today');
+    if (badge) badge.hidden = false;
+  }
+
   var current = fromQuery() || valid(read(STORE)) || 'pt';
   apply(current);
+  markToday();
 
   document.querySelector('.lang').addEventListener('click', function (e) {
     var btn = e.target.closest('.lang__btn');

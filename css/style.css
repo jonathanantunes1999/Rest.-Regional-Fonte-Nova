@@ -194,12 +194,22 @@ p{margin:0 0 1rem}
 .contacts a{font-family:var(--display);font-size:1.45rem;text-decoration:none;word-break:break-word;min-height:44px;display:inline-flex;align-items:center}
 .contacts a:hover{text-decoration:underline}
 .hours h3{font:italic 400 1.15rem var(--print);color:#E9C98F;margin-bottom:.6rem}
-.hours__days{font-family:var(--display);font-size:1.7rem;line-height:1.2;margin-bottom:.4rem}
-.hours__closed{color:#E7DAC2;max-width:34ch}
+.hours__table{width:100%;border-collapse:collapse}
+.hours__table th,.hours__table td{padding:.7rem 0;border-bottom:1px solid rgba(242,232,213,.28);vertical-align:top;text-align:left}
+.hours__table tr:first-child th,.hours__table tr:first-child td{border-top:1px solid rgba(242,232,213,.28)}
+.hours__table th{font-weight:500;padding-right:1rem;white-space:nowrap}
+.hours__table td{font-weight:600;font-size:1.05rem;line-height:1.5;font-variant-numeric:tabular-nums}
+.hours__table td span{display:block}
+.hours__table .is-closed th,.hours__table .is-closed td{color:#CDBFAE;font-weight:400}
+.hours__table tr.is-today th,.hours__table tr.is-today td{color:#fff;background:rgba(242,232,213,.1)}
+.hours__table tr.is-today th{padding-left:.6rem}
+.hours__table tr.is-today td{padding-right:.6rem}
+.today{margin-left:.6rem;font:600 .72rem var(--sans);letter-spacing:.08em;text-transform:uppercase;background:var(--papel);color:var(--vinho);padding:.1rem .45rem;border-radius:2px;vertical-align:.1em}
+.hours__closed{color:#E7DAC2;max-width:36ch;margin-top:1rem;font:italic 400 1.05rem/1.4 var(--print)}
 .social{display:flex;gap:.75rem;flex-wrap:wrap}
 .social__link{display:inline-flex;align-items:center;gap:.5rem;min-height:48px;padding:.5rem 1.1rem;border:1.5px solid rgba(242,232,213,.6);border-radius:2px;text-decoration:none;font-weight:500}
 .social__link:hover{background:var(--papel);color:var(--vinho)}
-@media (min-width:760px){.contact-grid{grid-template-columns:1.2fr .8fr;gap:4rem}}
+@media (min-width:760px){.contact-grid{grid-template-columns:1fr 1fr;gap:4rem}}
 
 /* rodapé */
 .site-footer{background:var(--tinta);color:#D8C9AF;font-size:.92rem;padding-block:1.5rem}
