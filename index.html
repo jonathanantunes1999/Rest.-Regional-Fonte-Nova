@@ -14,8 +14,10 @@
 <meta id="og-desc" property="og:description" content="Cozinha regional duriense na brasa, em Armamar, no coração do Douro. Reservas: 254 855 387.">
 <meta id="og-locale" property="og:locale" content="pt_PT">
 <meta property="og:locale:alternate" content="en_GB">
-<!-- TODO: trocar por foto real (1200x630) e acrescentar og:url com o domínio final -->
+<!-- TODO: acrescentar og:url e usar URL absoluta na og:image quando houver domínio final -->
 <meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,14 +68,13 @@
 <main>
   <!-- HERO -->
   <section class="hero" id="inicio">
-    <!-- Para a foto real: trocar este div por
-         <img src="assets/hero.webp" width="1600" height="1000" fetchpriority="high" data-alt-pt="..." data-alt-en="..."> -->
-    <div class="ph ph--hero" role="img"
-         data-alt-pt="Pintura do Restaurante Regional Fonte Nova rodeado de vinhas em socalcos, no Douro"
-         data-alt-en="Painting of Restaurante Regional Fonte Nova surrounded by terraced vineyards in the Douro"
-         aria-label="Pintura do Restaurante Regional Fonte Nova rodeado de vinhas em socalcos, no Douro">
-      <span class="ph__label" data-pt="FOTO: pintura do restaurante entre as vinhas" data-en="PHOTO: painting of the restaurant among the vines">FOTO: pintura do restaurante entre as vinhas</span>
-    </div>
+    <picture>
+      <source media="(max-width: 759px)" srcset="assets/hero-800.webp" type="image/webp">
+      <img class="hero__img" src="assets/hero-1600.webp" width="1600" height="1067" fetchpriority="high" decoding="async"
+           data-alt-pt="Pintura do Restaurante Regional Fonte Nova, rodeado de vinhas em socalcos, vista de cima"
+           data-alt-en="Painting of Restaurante Regional Fonte Nova, surrounded by terraced vineyards, seen from above"
+           alt="Pintura do Restaurante Regional Fonte Nova, rodeado de vinhas em socalcos, vista de cima">
+    </picture>
     <div class="hero__shade" aria-hidden="true"></div>
     <div class="wrap hero__content">
       <p class="eyebrow eyebrow--light" data-pt="Armamar · Douro" data-en="Armamar · Douro">Armamar · Douro</p>
