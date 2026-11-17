@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Restaurante Regional Fonte Nova | Cozinha duriense em Armamar</title>
 <meta id="meta-desc" name="description" content="Cozinha regional duriense na brasa, em Armamar, no coração do Douro. Carnes grelhadas, peixe e bacalhau à Fonte Nova. Reservas: 254 855 387.">
-<meta name="theme-color" content="#26211D">
+<meta name="theme-color" content="#F2E8D5">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
@@ -22,7 +22,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=IM+Fell+English:ital@0;1&family=Figtree:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="css/style.css">
 
 <script type="application/ld+json">
@@ -68,27 +68,40 @@
 <main>
   <!-- HERO -->
   <section class="hero" id="inicio">
-    <picture>
-      <source media="(max-width: 759px)" srcset="assets/hero-800.webp" type="image/webp">
-      <img class="hero__img" src="assets/hero-1600.webp" width="1600" height="1067" fetchpriority="high" decoding="async"
-           data-alt-pt="Pintura do Restaurante Regional Fonte Nova, rodeado de vinhas em socalcos, vista de cima"
-           data-alt-en="Painting of Restaurante Regional Fonte Nova, surrounded by terraced vineyards, seen from above"
-           alt="Pintura do Restaurante Regional Fonte Nova, rodeado de vinhas em socalcos, vista de cima">
-    </picture>
-    <div class="hero__shade" aria-hidden="true"></div>
-    <div class="wrap hero__content">
-      <p class="eyebrow eyebrow--light" data-pt="Armamar · Douro" data-en="Armamar · Douro">Armamar · Douro</p>
-      <h1>Restaurante Regional <span>Fonte Nova</span></h1>
-      <p class="hero__tagline" data-pt="Cozinha duriense na brasa, no coração do Douro." data-en="Douro cooking over charcoal, in the heart of the valley.">Cozinha duriense na brasa, no coração do Douro.</p>
-      <div class="btns">
-        <a class="btn btn--brasa" href="tel:+351254855387" data-pt="Ligar para reservar" data-en="Call to book">Ligar para reservar</a>
-        <a class="btn btn--ghost" href="#menu" data-pt="Ver menu" data-en="See the menu">Ver menu</a>
+    <div class="wrap hero__grid">
+      <div class="hero__text">
+        <p class="eyebrow" data-pt="Armamar · Douro" data-en="Armamar · Douro">Armamar · Douro</p>
+        <h1><span class="h1__pre">Restaurante Regional</span>Fonte Nova</h1>
+        <p class="hero__tagline" data-pt="Cozinha duriense na brasa, no coração do Douro." data-en="Douro cooking over charcoal, in the heart of the valley.">Cozinha duriense na brasa, no coração do Douro.</p>
+        <div class="btns">
+          <a class="btn btn--vinho" href="tel:+351254855387" data-pt="Ligar para reservar" data-en="Call to book">Ligar para reservar</a>
+          <a class="btn btn--line" href="#menu" data-pt="Ver menu" data-en="See the menu">Ver menu</a>
+        </div>
       </div>
+      <figure class="print">
+        <picture>
+          <source media="(max-width: 759px)" srcset="assets/hero-800.webp" type="image/webp">
+          <img class="print__img" src="assets/hero-1600.webp" width="1600" height="1067" fetchpriority="high" decoding="async"
+               data-alt-pt="Pintura do Restaurante Regional Fonte Nova, rodeado de vinhas em socalcos, vista de cima"
+               data-alt-en="Painting of Restaurante Regional Fonte Nova, surrounded by terraced vineyards, seen from above"
+               alt="Pintura do Restaurante Regional Fonte Nova, rodeado de vinhas em socalcos, vista de cima">
+        </picture>
+        <svg class="stamp" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+          <defs><path id="circ" d="M60 60 m-45 0 a45 45 0 1 1 90 0 a45 45 0 1 1 -90 0"/></defs>
+          <circle cx="60" cy="60" r="58" fill="#5E1A26"/>
+          <circle cx="60" cy="60" r="55" fill="none" stroke="#F2E8D5" stroke-width=".8" stroke-opacity=".6"/>
+          <text font-family="Figtree, sans-serif" font-size="9.5" font-weight="600" fill="#F2E8D5" letter-spacing="1"><textPath href="#circ" textLength="280" lengthAdjust="spacing">ARMAMAR · DOURO · ARMAMAR · DOURO ·</textPath></text>
+          <text x="60" y="57" text-anchor="middle" font-family="Young Serif, Georgia, serif" font-size="17" fill="#F2E8D5">Fonte</text>
+          <text x="60" y="75" text-anchor="middle" font-family="Young Serif, Georgia, serif" font-size="17" fill="#F2E8D5">Nova</text>
+        </svg>
+      </figure>
     </div>
   </section>
 
+  <div class="contour" aria-hidden="true"></div>
+
   <!-- SOBRE -->
-  <section class="section section--pedra" id="sobre">
+  <section class="section" id="sobre">
     <div class="wrap about">
       <div class="about__text">
         <p class="eyebrow" data-pt="Sobre nós" data-en="About us">Sobre nós</p>
@@ -96,10 +109,11 @@
         <p data-pt="Somos um restaurante de cozinha regional duriense, com anos de casa. Cozinhamos os sabores da região: carnes na brasa, peixe, bacalhau, tudo feito para se comer sem pressa." data-en="We are a regional restaurant serving the food of the Douro, and we have been at it for years. We cook the flavours of the region: meat over charcoal, fish, salt cod, all made to be eaten without hurry.">Somos um restaurante de cozinha regional duriense, com anos de casa. Cozinhamos os sabores da região: carnes na brasa, peixe, bacalhau, tudo feito para se comer sem pressa.</p>
         <p data-pt="Contamos com bom serviço, qualidade e um ambiente acolhedor e familiar. O que nos importa é que se sinta bem à nossa mesa." data-en="We care about good service, quality and a warm, family atmosphere. What matters to us is that you feel good at our table.">Contamos com bom serviço, qualidade e um ambiente acolhedor e familiar. O que nos importa é que se sinta bem à nossa mesa.</p>
         <blockquote class="quote">
+          <span class="quote__mark" aria-hidden="true">“</span>
           <p data-pt="O amor é o ingrediente principal da nossa cozinha." data-en="Love is the main ingredient in our kitchen.">O amor é o ingrediente principal da nossa cozinha.</p>
         </blockquote>
       </div>
-      <div class="ph ph--about" role="img"
+      <div class="ph ph--about taped" role="img"
            data-alt-pt="Sala do Restaurante Regional Fonte Nova, com mesas postas"
            data-alt-en="Dining room at Restaurante Regional Fonte Nova, with the tables laid"
            aria-label="Sala do Restaurante Regional Fonte Nova, com mesas postas">
@@ -109,53 +123,35 @@
   </section>
 
   <!-- MENU -->
-  <section class="section section--pedra2" id="menu">
+  <section class="section section--kraft" id="menu">
     <div class="wrap">
-      <p class="eyebrow" data-pt="Menu" data-en="Menu">Menu</p>
-      <h2 data-pt="O que sai da brasa" data-en="What comes off the grill">O que sai da brasa</h2>
-      <p class="menu-note" data-pt="Todos os pratos incluem entradas. Preços por pessoa." data-en="All dishes include starters. Prices are per person.">Todos os pratos incluem entradas. Preços por pessoa.</p>
-
-      <div class="menu-grid">
-        <article class="card">
-          <h3 data-pt="Carnes" data-en="Meat">Carnes</h3>
-          <p class="card__sub" data-pt="Grelhadas na brasa" data-en="Charcoal grilled">Grelhadas na brasa</p>
-          <ul class="dishes">
-            <li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Cachaço de porco transmontano com castanhas" data-en="Trás-os-Montes pork neck with chestnuts">Cachaço de porco transmontano com castanhas</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="21 €" data-en="€21">21 €</span></div></li>
-            <li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Secretos de porco grelhados em broa" data-en="Pork “secretos” grilled on cornbread">Secretos de porco grelhados em broa</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="21 €" data-en="€21">21 €</span></div></li>
-            <li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Entremeada / costela de porco transmontano" data-en="Trás-os-Montes pork belly / ribs">Entremeada / costela de porco transmontano</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="21 €" data-en="€21">21 €</span></div></li>
-            <li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Alcatra de Maronesa" data-en="Alcatra de Maronesa">Alcatra de Maronesa</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="24 €" data-en="€24">24 €</span></div><p class="dish__sub" lang="en" data-pt="" data-en="Maronesa beef rump"></p></li>
-            <li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Pontas de lombo de Maronesa" data-en="Pontas de lombo de Maronesa">Pontas de lombo de Maronesa</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="25 €" data-en="€25">25 €</span></div><p class="dish__sub" lang="en" data-pt="" data-en="Maronesa beef sirloin tips"></p></li>
-            <li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Entrecosto de vitela (entrecôte)" data-en="Veal entrecôte">Entrecosto de vitela (entrecôte)</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="26 €" data-en="€26">26 €</span></div></li>
-            <li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Medalhões de vitela em cama duriense" data-en="Veal medallions on a Douro-style bed">Medalhões de vitela em cama duriense</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="30 €" data-en="€30">30 €</span></div></li>
-            <li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Borrego grelhado" data-en="Grilled lamb">Borrego grelhado</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="30 €" data-en="€30">30 €</span></div></li>
-            <li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Cabrito grelhado" data-en="Grilled kid goat">Cabrito grelhado</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="30 €" data-en="€30">30 €</span></div></li>
-          </ul>
-        </article>
-
-        <div class="menu-side">
-          <article class="card">
-            <h3 data-pt="Acompanhamentos" data-en="Sides">Acompanhamentos</h3>
-            <ul class="sides">
-              <li data-pt="Arroz fumado" data-en="Smoked rice">Arroz fumado</li>
-              <li data-pt="Batata temperada (assada ou cozida com ervas)" data-en="Seasoned potatoes (roasted or boiled with herbs)">Batata temperada (assada ou cozida com ervas)</li>
-              <li data-pt="Legumes ou salada" data-en="Vegetables or salad">Legumes ou salada</li>
-              <li data-pt="Puré de maçã" data-en="Apple purée">Puré de maçã</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3 data-pt="Peixe" data-en="Fish">Peixe</h3>
-            <ul class="dishes">
-              <li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Salmão temperado grelhado" data-en="Grilled seasoned salmon">Salmão temperado grelhado</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="24 €" data-en="€24">24 €</span></div><p class="dish__sub" data-pt="Com arroz fumado, batata e legumes ou salada" data-en="With smoked rice, potatoes, and vegetables or salad">Com arroz fumado, batata e legumes ou salada</p></li>
-              <li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Bacalhau à Fonte Nova" data-en="Bacalhau à Fonte Nova">Bacalhau à Fonte Nova</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="26 €" data-en="€26">26 €</span></div><p class="dish__sub" data-pt="Com batata frita caseira e molho de cebolada" data-en="Codfish with homemade fries and onion sauce">Com batata frita caseira e molho de cebolada</p></li>
-            </ul>
-          </article>
-
-          <div class="ph ph--dish" role="img"
-               data-alt-pt="Cabrito grelhado na brasa, pronto a servir"
-               data-alt-en="Charcoal-grilled kid goat, ready to serve"
-               aria-label="Cabrito grelhado na brasa, pronto a servir">
-            <span class="ph__label" data-pt="FOTO: cabrito grelhado" data-en="PHOTO: grilled kid goat">FOTO: cabrito grelhado</span>
+      <div class="ementa">
+        <header class="ementa__head">
+          <p class="eyebrow" data-pt="Da nossa brasa" data-en="From our grill">Da nossa brasa</p>
+          <h2 data-pt="Ementa" data-en="Menu">Ementa</h2>
+          <p class="ementa__note" data-pt="Todos os pratos incluem entradas. Preços por pessoa." data-en="All dishes include starters. Prices are per person.">Todos os pratos incluem entradas. Preços por pessoa.</p>
+        </header>
+        <div class="ementa__cols">
+          <section class="cat" aria-labelledby="c-carnes">
+            <h3 class="cat__title" id="c-carnes"><span data-pt="Carnes" data-en="Meat">Carnes</span></h3>
+            <p class="cat__sub" data-pt="Grelhadas na brasa" data-en="Charcoal grilled">Grelhadas na brasa</p>
+            <ul class="dishes"><li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Cachaço de porco transmontano com castanhas" data-en="Trás-os-Montes pork neck with chestnuts">Cachaço de porco transmontano com castanhas</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="21 €" data-en="€21">21 €</span></div></li><li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Secretos de porco grelhados em broa" data-en="Pork “secretos” grilled on cornbread">Secretos de porco grelhados em broa</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="21 €" data-en="€21">21 €</span></div></li><li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Entremeada / costela de porco transmontano" data-en="Trás-os-Montes pork belly / ribs">Entremeada / costela de porco transmontano</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="21 €" data-en="€21">21 €</span></div></li><li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Alcatra de Maronesa" data-en="Alcatra de Maronesa">Alcatra de Maronesa</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="24 €" data-en="€24">24 €</span></div><p class="dish__sub" lang="en" data-pt="" data-en="Maronesa beef rump"></p></li><li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Pontas de lombo de Maronesa" data-en="Pontas de lombo de Maronesa">Pontas de lombo de Maronesa</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="25 €" data-en="€25">25 €</span></div><p class="dish__sub" lang="en" data-pt="" data-en="Maronesa beef sirloin tips"></p></li><li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Entrecosto de vitela (entrecôte)" data-en="Veal entrecôte">Entrecosto de vitela (entrecôte)</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="26 €" data-en="€26">26 €</span></div></li><li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Medalhões de vitela em cama duriense" data-en="Veal medallions on a Douro-style bed">Medalhões de vitela em cama duriense</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="30 €" data-en="€30">30 €</span></div></li><li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Borrego grelhado" data-en="Grilled lamb">Borrego grelhado</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="30 €" data-en="€30">30 €</span></div></li><li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Cabrito grelhado" data-en="Grilled kid goat">Cabrito grelhado</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="30 €" data-en="€30">30 €</span></div></li></ul>
+          </section>
+          <div class="ementa__right">
+            <section class="cat" aria-labelledby="c-peixe">
+              <h3 class="cat__title" id="c-peixe"><span data-pt="Peixe" data-en="Fish">Peixe</span></h3>
+              <ul class="dishes"><li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Salmão temperado grelhado" data-en="Grilled seasoned salmon">Salmão temperado grelhado</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="24 €" data-en="€24">24 €</span></div><p class="dish__sub" data-pt="Com arroz fumado, batata e legumes ou salada" data-en="With smoked rice, potatoes, and vegetables or salad">Com arroz fumado, batata e legumes ou salada</p></li><li class="dish"><div class="dish__row"><span class="dish__name" data-pt="Bacalhau à Fonte Nova" data-en="Bacalhau à Fonte Nova">Bacalhau à Fonte Nova</span><span class="dish__dots" aria-hidden="true"></span><span class="dish__price" data-pt="26 €" data-en="€26">26 €</span></div><p class="dish__sub" data-pt="Com batata frita caseira e molho de cebolada" data-en="Codfish with homemade fries and onion sauce">Com batata frita caseira e molho de cebolada</p></li></ul>
+            </section>
+            <section class="cat" aria-labelledby="c-acomp">
+              <h3 class="cat__title" id="c-acomp"><span data-pt="Acompanhamentos" data-en="Sides">Acompanhamentos</span></h3>
+              <ul class="sides"><li data-pt="Arroz fumado" data-en="Smoked rice">Arroz fumado</li><li data-pt="Batata temperada (assada ou cozida com ervas)" data-en="Seasoned potatoes (roasted or boiled with herbs)">Batata temperada (assada ou cozida com ervas)</li><li data-pt="Legumes ou salada" data-en="Vegetables or salad">Legumes ou salada</li><li data-pt="Puré de maçã" data-en="Apple purée">Puré de maçã</li></ul>
+            </section>
+            <div class="ph ph--dish taped taped--b" role="img"
+                 data-alt-pt="Cabrito grelhado na brasa, pronto a servir"
+                 data-alt-en="Charcoal-grilled kid goat, ready to serve"
+                 aria-label="Cabrito grelhado na brasa, pronto a servir">
+              <span class="ph__label" data-pt="FOTO: cabrito grelhado" data-en="PHOTO: grilled kid goat">FOTO: cabrito grelhado</span>
+            </div>
           </div>
         </div>
       </div>
@@ -163,7 +159,7 @@
   </section>
 
   <!-- LOCALIZAÇÃO -->
-  <section class="section section--pedra" id="localizacao">
+  <section class="section" id="localizacao">
     <div class="wrap">
       <p class="eyebrow" data-pt="Localização" data-en="Location">Localização</p>
       <h2 data-pt="Em Armamar, no Douro" data-en="In Armamar, in the Douro">Em Armamar, no Douro</h2>
@@ -178,13 +174,13 @@
   </section>
 
   <!-- CONTACTOS -->
-  <section class="section section--xisto" id="contactos">
+  <section class="section section--vinho" id="contactos">
     <div class="wrap">
       <p class="eyebrow eyebrow--light" data-pt="Contactos e horário" data-en="Contact and opening days">Contactos e horário</p>
       <h2 data-pt="Reservas" data-en="Bookings">Reservas</h2>
+      <a class="bigphone" href="tel:+351254855387" aria-label="Ligar para 254 855 387" data-aria-pt="Ligar para 254 855 387" data-aria-en="Call 254 855 387">254 855 387</a>
       <div class="contact-grid">
         <ul class="contacts">
-          <li><span class="contacts__k" data-pt="Telefone" data-en="Phone">Telefone</span><a href="tel:+351254855387">254 855 387</a></li>
           <li><span class="contacts__k" data-pt="Telemóvel" data-en="Mobile">Telemóvel</span><a href="tel:+351912828305">91 282 83 05</a></li>
           <li><span class="contacts__k">Email</span><a href="mailto:rest.fontenova@hotmail.com">rest.fontenova@hotmail.com</a></li>
         </ul>
