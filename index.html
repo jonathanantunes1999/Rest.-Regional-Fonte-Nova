@@ -68,24 +68,15 @@
 <main>
   <!-- HERO -->
   <section class="hero" id="inicio">
-    <div class="wrap hero__grid">
-      <div class="hero__text">
-        <p class="eyebrow" data-pt="Armamar · Douro" data-en="Armamar · Douro">Armamar · Douro</p>
-        <h1><span class="h1__pre">Restaurante Regional</span>Fonte Nova</h1>
-        <p class="hero__tagline" data-pt="Cozinha duriense na brasa, no coração do Douro." data-en="Douro cooking over charcoal, in the heart of the valley.">Cozinha duriense na brasa, no coração do Douro.</p>
-        <div class="btns">
-          <a class="btn btn--vinho" href="tel:+351254855387" data-pt="Ligar para reservar" data-en="Call to book">Ligar para reservar</a>
-          <a class="btn btn--line" href="#menu" data-pt="Ver menu" data-en="See the menu">Ver menu</a>
-        </div>
-      </div>
-      <figure class="print">
-        <picture>
-          <source media="(max-width: 759px)" srcset="assets/hero-800.webp" type="image/webp">
-          <img class="print__img" src="assets/hero-1600.webp" width="1600" height="1067" fetchpriority="high" decoding="async"
-               data-alt-pt="Pintura do Restaurante Regional Fonte Nova, rodeado de vinhas em socalcos, vista de cima"
-               data-alt-en="Painting of Restaurante Regional Fonte Nova, surrounded by terraced vineyards, seen from above"
-               alt="Pintura do Restaurante Regional Fonte Nova, rodeado de vinhas em socalcos, vista de cima">
-        </picture>
+    <picture class="hero__pic">
+      <source media="(max-width: 759px)" srcset="assets/hero-800.webp" type="image/webp">
+      <img class="hero__img" src="assets/hero-1600.webp" width="1600" height="1067" fetchpriority="high" decoding="async"
+           data-alt-pt="Pintura do Restaurante Regional Fonte Nova, rodeado de vinhas em socalcos, vista de cima"
+           data-alt-en="Painting of Restaurante Regional Fonte Nova, surrounded by terraced vineyards, seen from above"
+           alt="Pintura do Restaurante Regional Fonte Nova, rodeado de vinhas em socalcos, vista de cima">
+    </picture>
+    <div class="wrap hero__wrap">
+      <div class="label">
         <svg class="stamp" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
           <defs><path id="circ" d="M60 60 m-45 0 a45 45 0 1 1 90 0 a45 45 0 1 1 -90 0"/></defs>
           <circle cx="60" cy="60" r="58" fill="#5E1A26"/>
@@ -94,7 +85,14 @@
           <text x="60" y="57" text-anchor="middle" font-family="Young Serif, Georgia, serif" font-size="17" fill="#F2E8D5">Fonte</text>
           <text x="60" y="75" text-anchor="middle" font-family="Young Serif, Georgia, serif" font-size="17" fill="#F2E8D5">Nova</text>
         </svg>
-      </figure>
+        <p class="eyebrow" data-pt="Armamar · Douro" data-en="Armamar · Douro">Armamar · Douro</p>
+        <h1><span class="h1__pre">Restaurante Regional</span>Fonte Nova</h1>
+        <p class="hero__tagline" data-pt="Cozinha duriense na brasa, no coração do Douro." data-en="Douro cooking over charcoal, in the heart of the valley.">Cozinha duriense na brasa, no coração do Douro.</p>
+        <div class="btns">
+          <a class="btn btn--vinho" href="tel:+351254855387" data-pt="Ligar para reservar" data-en="Call to book">Ligar para reservar</a>
+          <a class="btn btn--line" href="#menu" data-pt="Ver menu" data-en="See the menu">Ver menu</a>
+        </div>
+      </div>
     </div>
   </section>
 
