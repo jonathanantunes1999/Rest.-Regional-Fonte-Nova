@@ -38,7 +38,7 @@ p{margin:0 0 1rem}
 .nav a:hover{color:var(--vinho);text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:2px}
 @media (min-width:760px){
   :root{--hdr:4.4rem}
-  .header-row{flex-wrap:nowrap}
+  .header-row{flex-wrap:nowrap;min-height:var(--hdr);padding-block:0}
   .nav{order:0;width:auto;border:0;gap:1.75rem;margin-left:auto}
   .nav a{flex:none;font-size:1rem}
   .lang{margin-left:1rem}
@@ -70,7 +70,7 @@ p{margin:0 0 1rem}
 .stamp{position:absolute;width:92px;height:92px;right:.6rem;top:-2.6rem;filter:drop-shadow(0 3px 5px rgba(42,31,26,.35));animation:giro 60s linear infinite}
 @keyframes giro{to{transform:rotate(360deg)}}
 @media (min-width:860px){
-  .hero{min-height:calc(100svh - var(--hdr));min-height:min(calc(100svh - var(--hdr)),820px);display:flex;align-items:flex-end}
+  .hero{min-height:calc(100vh - var(--hdr));min-height:calc(100svh - var(--hdr));display:flex;align-items:flex-end}
   .hero__pic{position:absolute;inset:0}
   .hero__img{height:100%;aspect-ratio:auto;object-position:50% 30%}
   .hero__wrap{margin-top:0;padding-bottom:3.5rem;display:flex;justify-content:flex-end}
