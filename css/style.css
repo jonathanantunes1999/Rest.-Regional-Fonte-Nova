@@ -73,8 +73,6 @@ p{margin:0 0 1rem}
 .hero__actions .btn--papel:hover{background:var(--vinho-2)}
 .btn--ghostlight{color:var(--vinho);border-color:var(--vinho)}
 .btn--ghostlight:hover{background:var(--vinho);color:var(--papel)}
-.stamp{position:absolute;z-index:3;width:78px;height:78px;right:1.5rem;top:1.5rem;filter:drop-shadow(0 3px 6px rgba(0,0,0,.35));animation:giro 60s linear infinite}
-@keyframes giro{to{transform:rotate(360deg)}}
 @media (max-width:420px){.hero .btns .btn{flex:1 1 auto}}
 @media (min-width:860px){
   .hero{min-height:calc(100vh - var(--hdr));min-height:calc(100svh - var(--hdr));background:var(--tinta)}
@@ -91,8 +89,7 @@ p{margin:0 0 1rem}
   .hero__actions .btn--papel:hover{background:#fff}
   .hero__actions .btn--ghostlight{color:var(--papel);border-color:var(--papel);background:rgba(34,26,22,.4)}
   .hero__actions .btn--ghostlight:hover{background:var(--papel);color:var(--vinho)}
-  .stamp{width:112px;height:112px;right:auto;left:3.4rem;top:3.2rem}
-}
+  }
 .contour{height:56px;background:var(--curvas) repeat-x center;opacity:.7}
 
 /* secções */
