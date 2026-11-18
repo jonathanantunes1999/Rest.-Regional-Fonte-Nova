@@ -4,8 +4,8 @@
   var META = {
     pt: {
       title: 'Restaurante Regional Fonte Nova | Cozinha duriense em Armamar',
-      desc: 'Cozinha regional duriense na brasa, em Armamar, no coração do Douro. Carnes grelhadas, peixe e bacalhau à Fonte Nova. Reservas: 254 855 387.',
-      ogDesc: 'Cozinha regional duriense na brasa, em Armamar, no coração do Douro. Reservas: 254 855 387.',
+      desc: 'Cozinha regional duriense na brasa, em Armamar, no coração do Douro. Carnes grelhadas, peixe e bacalhau à Fonte Nova. Reservas: +351 254 855 387.',
+      ogDesc: 'Cozinha regional duriense na brasa, em Armamar, no coração do Douro. Reservas: +351 254 855 387.',
       locale: 'pt_PT', html: 'pt-PT'
     },
     en: {

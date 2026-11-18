@@ -197,6 +197,7 @@ p{margin:0 0 1rem}
 .section--vinho h2{color:var(--papel)}
 .bigphone{display:block;font:400 clamp(2.6rem,11vw,5rem)/1.05 var(--display);text-decoration:none;color:var(--papel);margin:.25rem 0 1.25rem;padding-block:.25rem}
 .callbtn{margin-bottom:2.5rem}
+.bigphone .cc{font-size:.5em;vertical-align:.45em;margin-right:.15em;opacity:.85;letter-spacing:.02em}
 .bigphone:hover{text-decoration:underline;text-underline-offset:.15em;text-decoration-thickness:3px}
 .contact-grid{display:grid;gap:2.5rem;margin-bottom:2.5rem}
 .contacts{list-style:none;margin:0;padding:0}
@@ -205,6 +206,7 @@ p{margin:0 0 1rem}
 .contacts__k{font:italic 400 1.05rem var(--print);color:#E9C98F}
 .contacts a{font-family:var(--display);font-size:1.45rem;text-decoration:none;word-break:break-word;min-height:44px;display:inline-flex;align-items:center}
 .contacts a:hover{text-decoration:underline}
+.contacts a[href^="mailto"]{font-size:clamp(1.05rem,5.6vw,1.45rem);word-break:normal;overflow-wrap:anywhere}
 .hours h3{font:italic 400 1.15rem var(--print);color:#E9C98F;margin-bottom:.6rem}
 .hours__table{width:100%;border-collapse:collapse}
 .hours__table th,.hours__table td{padding:.7rem 0;border-bottom:1px solid rgba(242,232,213,.28);vertical-align:top;text-align:left}
