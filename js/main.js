@@ -81,9 +81,31 @@
     if (badge) badge.hidden = false;
   }
 
+  function setupToTop() {
+    var btn = document.querySelector('.totop');
+    var hero = document.getElementById('inicio');
+    if (!btn || !hero) return;
+    function show(v) { btn.classList.toggle('is-visible', v); }
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+    });
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        show(!entries[0].isIntersecting);
+      }, { threshold: 0 }).observe(hero);
+    } else {
+      window.addEventListener('scroll', function () {
+        show(window.pageYOffset > window.innerHeight);
+      }, { passive: true });
+    }
+  }
+
   var current = fromQuery() || valid(read(STORE)) || 'pt';
   apply(current);
   markToday();
+  setupToTop();
 
   document.querySelector('.lang').addEventListener('click', function (e) {
     var btn = e.target.closest('.lang__btn');

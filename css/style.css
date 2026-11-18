@@ -231,6 +231,13 @@ p{margin:0 0 1rem}
 .site-footer .complaints{display:inline-flex;align-items:center;min-height:44px;padding:.2rem .9rem;border:1px solid #8a7b69;border-radius:2px;text-decoration:none;font-weight:500}
 .site-footer .complaints:hover{background:var(--papel);color:var(--tinta)}
 
+/* botão voltar ao topo */
+.totop{position:fixed;right:1.1rem;bottom:1.1rem;z-index:60;width:48px;height:48px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--vinho);color:var(--papel);border:2px solid var(--papel);box-shadow:0 8px 18px -6px rgba(42,31,26,.6);text-decoration:none;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .25s,transform .25s,visibility 0s linear .25s,background-color .2s}
+.totop.is-visible{opacity:1;visibility:visible;transform:none;transition:opacity .25s,transform .25s,visibility 0s,background-color .2s}
+.totop:hover{background:var(--vinho-2)}
+.totop:focus-visible{outline:3px solid var(--vinho);outline-offset:3px}
+@media (max-width:1180px){.site-footer{padding-bottom:4.5rem}}
+
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *{transition:none!important;animation:none!important}
