@@ -8,8 +8,8 @@
   --sans:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   --hdr:6rem;
   --grao:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .36 0 0 0 0 .25 0 0 0 0 .14 0 0 0 .12 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  --curvas:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='56' viewBox='0 0 600 56' fill='none' stroke='%23B07A2A' stroke-width='1.3'%3E%3Cpath d='M0 8C100-4 200 20 300 8S500-4 600 8'/%3E%3Cpath d='M0 20C100 8 200 32 300 20S500 8 600 20'/%3E%3Cpath d='M0 32C100 20 200 44 300 32S500 20 600 32'/%3E%3Cpath d='M0 44C100 32 200 56 300 44S500 32 600 44'/%3E%3C/svg%3E");
-  --curvas-claras:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='56' viewBox='0 0 600 56' fill='none' stroke='%23F2E8D5' stroke-opacity='.13' stroke-width='1.3'%3E%3Cpath d='M0 8C100-4 200 20 300 8S500-4 600 8'/%3E%3Cpath d='M0 20C100 8 200 32 300 20S500 8 600 20'/%3E%3Cpath d='M0 32C100 20 200 44 300 32S500 20 600 32'/%3E%3Cpath d='M0 44C100 32 200 56 300 44S500 32 600 44'/%3E%3C/svg%3E");
+  --curvas:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='64'%20viewBox='0%200%20600%2064'%20fill='none'%20stroke='%23B07A2A'%20stroke-width='1.3'%3E%3Cpath%20d='M0%2012%20C110%2012%20190%2028%20300%2028%20S490%2012%20600%2012'/%3E%3Cpath%20d='M0%2022%20C110%2022%20190%2038%20300%2038%20S490%2022%20600%2022'/%3E%3Cpath%20d='M0%2032%20C110%2032%20190%2048%20300%2048%20S490%2032%20600%2032'/%3E%3Cpath%20d='M0%2042%20C110%2042%20190%2058%20300%2058%20S490%2042%20600%2042'/%3E%3C/svg%3E");
+  --curvas-claras:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='600'%20height='64'%20viewBox='0%200%20600%2064'%20fill='none'%20stroke='%23F2E8D5'%20stroke-opacity='.13'%20stroke-width='1.3'%3E%3Cpath%20d='M0%20-36%20C110%20-36%20190%20-20%20300%20-20%20S490%20-36%20600%20-36'/%3E%3Cpath%20d='M0%20-20%20C110%20-20%20190%20-4%20300%20-4%20S490%20-20%20600%20-20'/%3E%3Cpath%20d='M0%20-4%20C110%20-4%20190%2012%20300%2012%20S490%20-4%20600%20-4'/%3E%3Cpath%20d='M0%2012%20C110%2012%20190%2028%20300%2028%20S490%2012%20600%2012'/%3E%3Cpath%20d='M0%2028%20C110%2028%20190%2044%20300%2044%20S490%2028%20600%2028'/%3E%3Cpath%20d='M0%2044%20C110%2044%20190%2060%20300%2060%20S490%2044%20600%2044'/%3E%3Cpath%20d='M0%2060%20C110%2060%20190%2076%20300%2076%20S490%2060%20600%2060'/%3E%3Cpath%20d='M0%2076%20C110%2076%20190%2092%20300%2092%20S490%2076%20600%2076'/%3E%3C/svg%3E");
 }
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:var(--hdr);-webkit-text-size-adjust:100%}
@@ -90,7 +90,7 @@ p{margin:0 0 1rem}
   .hero__actions .btn--ghostlight{color:var(--papel);border-color:var(--papel);background:rgba(34,26,22,.4)}
   .hero__actions .btn--ghostlight:hover{background:var(--papel);color:var(--vinho)}
   }
-.contour{height:56px;background:var(--curvas) repeat-x center;opacity:.7}
+.contour{height:64px;background:var(--curvas) repeat-x center;opacity:.7}
 
 /* secções */
 .section{padding-block:4.25rem}
