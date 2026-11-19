@@ -101,6 +101,11 @@ p{margin:0 0 1rem}
 .quote{position:relative;margin:2.25rem 0 0;padding:1.5rem 0 0 0}
 .quote__mark{position:absolute;left:-.1rem;top:-1.2rem;font:400 6rem/1 var(--display);color:var(--vinho);opacity:.22}
 .quote p{position:relative;font:italic 400 clamp(1.6rem,5.5vw,2.2rem)/1.25 var(--print);color:var(--vinho);margin:0;max-width:20ch}
+@media (max-width:859px){
+  .quote{text-align:center;padding-top:2.6rem}
+  .quote__mark{left:50%;transform:translateX(-50%);top:-.6rem}
+  .quote p{margin-inline:auto}
+}
 @media (min-width:860px){
   .about{grid-template-columns:.9fr 1.1fr;align-items:center;gap:3.5rem}
   .section{padding-block:6.5rem}
